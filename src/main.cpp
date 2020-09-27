@@ -27,7 +27,7 @@ void setup() {
   while(WiFi.status() != WL_CONNECTED) { 
     delay(500);
     Serial.print(".");
-  }
+  }t 
   Serial.println(WiFi.localIP());
   Heltec.begin(false /*DisplayEnable Enable*/, true /*Heltec.LoRa Disable*/, true /*Serial Enable*/, true /*PABOOST Enable*/, 866E6 /*long BAND*/);
 }
